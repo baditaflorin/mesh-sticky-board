@@ -49,3 +49,119 @@ body,
   opacity: 0.6;
   font-variant-numeric: tabular-nums;
 }
+
+.creative-app {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 5.5rem 1rem 3rem;
+}
+.creative-app h1 {
+  margin: 0.2rem 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+.eyebrow {
+  color: var(--mesh-accent);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.lede {
+  max-width: 40rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--mesh-fg) 78%, transparent);
+}
+.composer,
+.toolbar,
+.card-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.4rem 0;
+}
+.composer input,
+.composer select {
+  min-height: 2.75rem;
+  border: 1px solid #536275;
+  border-radius: 0.65rem;
+  background: #131c29;
+  color: inherit;
+  padding: 0.6rem 0.8rem;
+  flex: 1;
+}
+button {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 0.65rem;
+  padding: 0.6rem 0.85rem;
+  color: #07111f;
+  background: var(--mesh-accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+.sticky-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+.sticky {
+  min-height: 10rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #172033;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 12px 30px #0004;
+}
+.sticky p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.sticky .card-actions button {
+  background: #172033;
+  color: white;
+  min-height: 2.1rem;
+}
+.amber {
+  background: #fde68a;
+}
+.blue {
+  background: #bfdbfe;
+}
+.coral {
+  background: #fecaca;
+}
+.mint {
+  background: #bbf7d0;
+}
+.violet {
+  background: #ddd6fe;
+}
+.empty,
+.status,
+.hint {
+  color: color-mix(in srgb, var(--mesh-fg) 65%, transparent);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
